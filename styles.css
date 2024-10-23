@@ -1,0 +1,181 @@
+/* Layout: Main container split into sidebar and main content */
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Sidebar for saved sessions */
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#saved-sessions {
+    list-style: none;
+    padding-left: 0;
+}
+
+#saved-sessions li {
+    background-color: #e9ecef;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#saved-sessions li:hover {
+    background-color: #ced4da;
+}
+
+.new-btn {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* General Styles for form and table */
+body {
+    background-color: #f4f7fa;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Add gap between search bar and form */
+.form-container {
+    margin-top: 20px;  /* Gap between search bar and form */
+    margin-bottom: 40px;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;  /* Gap between form elements, including Item Name and Quantity */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+#item-name
+{
+    width: 368px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+.btn.add-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn.update-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn.download-btn {
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+    float: right;
+}
+
+.reset-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+.table-container {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table td:last-child {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+tfoot td {
+    font-weight: 600;
+    color: #333;
+    background-color: #f4f4f4;
+}
